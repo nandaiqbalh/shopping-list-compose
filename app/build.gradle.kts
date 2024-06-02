@@ -66,4 +66,20 @@ dependencies {
 	androidTestImplementation(libs.androidx.ui.test.junit4)
 	debugImplementation(libs.androidx.ui.tooling)
 	debugImplementation(libs.androidx.ui.test.manifest)
+
+	implementation("com.google.maps.android:maps-compose:4.4.1")
+	implementation("com.google.android.gms:play-services-maps:18.1.0")
+
+	val nav_version = "2.7.7"
+	implementation("androidx.navigation:navigation-compose:$nav_version")
+
+	val lifecycle_version = "2.8.0"
+	// ViewModel utilities for Compose
+	implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
+
+	// Network Calls
+	implementation("com.squareup.retrofit2:retrofit:2.9.0")
+
+	// JSON to Kotlin Object Mapping
+	implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 }
